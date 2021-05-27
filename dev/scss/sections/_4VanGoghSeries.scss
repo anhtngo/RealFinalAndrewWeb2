@@ -1,0 +1,9 @@
+#vangoghseries{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". 4-vangogh-series .";
+    
+    >article{
+        grid-area: search;
+    }
+}

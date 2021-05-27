@@ -1,0 +1,71 @@
+#influenced{
+    
+    padding-bottom: 47px;
+    @include md{
+        background-image: url("../img/Influenced/bridge.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    >div{
+        
+       #influenced-content{
+           display: grid;
+           grid-template-columns: 32px auto 32px;
+           grid-template-areas: ". influenced-info .";
+           padding-top: 19px;
+   
+           >div{
+               grid-area: influenced-info;
+
+               h1{
+                   padding: 8px 0;
+               }
+           }
+       }
+
+       #influenced-img{
+           ul{
+               li{
+
+               }
+
+               #duncan{
+
+                  section{
+
+                      aside{
+                              @include md{
+
+                                  background-image: url("../img/Influenced/duncan.jpg");
+                                  background-size: cover;
+                                  background-position: center;
+                                   grid-template-rows: 300px;
+                                   display: grid;
+
+                                  img{
+                                      display: none;
+                                  }
+                              }
+                      }
+
+                      >div{
+                          display: none;
+
+                          @include md{
+                              display: list-item;
+                          }
+                      }
+                  }
+               }
+
+               #lee{
+                   display: none;
+               }
+           }
+
+       }
+
+
+   }
+}

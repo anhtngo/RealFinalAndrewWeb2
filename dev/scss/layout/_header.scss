@@ -1,0 +1,32 @@
+/* =============
+    Header
+============= */
+header{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". header .";
+
+    @include md{
+        grid-template-columns: 32px auto 32px;
+        grid-template-areas: ". header .";
+    }
+
+    >div{
+        grid-area: header;
+        
+        @include md{
+            display: grid;
+            grid-template-columns: 3, 3fr;
+            grid-template-areas: " article section .";
+        }
+
+        article{
+            grid-area: article;
+        }
+
+        section{
+            grid-area: section;
+
+        }
+    }
+}

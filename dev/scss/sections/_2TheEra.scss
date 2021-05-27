@@ -1,0 +1,186 @@
+#theera{
+
+    padding-bottom: 47px;
+
+    @include md{
+         display: grid;
+        grid-template-columns: auto 900px auto;
+        grid-template-areas: ". era ."
+        ;
+        padding-top: 27px;
+    }
+   
+
+>div{
+     @include md{
+         grid-area: era;
+         display: grid;
+         grid-template-areas: "era-content"
+                              "era-img";
+        
+        
+        }
+        
+    #era-content{
+        display: grid;
+        grid-template-columns: 32px auto 32px;
+        grid-template-areas: ". era-mobile .";
+
+        @include md{
+            grid-template-columns: 0 auto 0;
+            grid-area: era-content;
+            padding-bottom: 10px;
+        }
+
+
+        >div{
+            grid-area: era-mobile;
+
+            h1{
+                padding: 8px 0;
+            }
+        }
+    }
+
+    #era-image{
+
+        ul{
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-areas: "paul girl horse";
+                gap: 24px;
+                grid-area: era-img;
+                
+            }
+            li{
+                section{
+                    aside{
+                h3{
+                    display: list-item;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding-bottom: 5px;
+                }
+
+               }
+
+               >div{
+                   h4{
+                       margin: 0 5px;
+                   }
+               }
+                }
+               
+
+
+               
+            }
+
+            #daughter{
+                @include md{
+                    grid-area: girl;
+                }
+                section{
+                    aside{
+                    
+                        // height: 260px;
+                        h3{
+                            display: none;
+                        }
+
+                        @include md{
+                            background-image: url("../img/Era/girl.jpg");
+                            background-size: cover;
+                           background-position: center;
+                           grid-template-rows: 300px;
+                           display: grid;
+                           
+                           h3{
+                               display: list-item;
+                               color: white;
+                               display: flex;
+                               justify-content: center;
+                               align-items: flex-end;
+                           }
+
+                            img{
+                                display: none;
+                            }
+                        }
+                    }
+                    >div{
+                        display: none;
+
+                        @include md{
+                            display: list-item;
+                            background-color: $duck;
+                            color: white;
+                        }
+                    }
+                }
+            }
+
+            #paul{
+              display: none;
+
+              @include md{
+                  display: list-item;
+                  grid-area: paul;
+
+                  section{
+                      aside{
+                    background-image: url("../img/Era/paul.jpg");
+                    background-size: cover;
+                   background-position: center -20px;
+                   grid-template-rows: 300px;
+                           display: grid;
+                   
+                  }
+
+                  >div{
+                      background-color: $duck;
+                      color: white;
+                  }
+                  }
+
+                  
+
+                  
+              }
+            }
+
+            #horse{
+                display: none;
+                @include md{
+                    display: list-item;
+                    grid-area: horse;
+                    section{
+                        aside{
+                      background-image: url("../img/Era/horse.jpg");
+                      background-size: cover;
+                     background-position: center top;
+                     grid-template-rows: 300px;
+                           display: grid;
+                     
+                    }
+                    >div{
+                        background-color: $duck;
+                        color: white;
+                    }
+                    }
+                    
+                }
+            }
+        }
+
+
+    }
+}
+    
+
+   
+
+}
