@@ -654,7 +654,7 @@ footer > div #social i:hover {
   }
 }
 #hero {
-  padding-bottom: 47px;
+  padding-bottom: 17px;
 }
 #hero #img {
   background-image: url("../img/1 hero/1-hero.jpg");
@@ -723,7 +723,7 @@ footer > div #social i:hover {
     display: grid;
     grid-template-columns: auto 700px auto;
     grid-template-areas: ". era .";
-    padding-top: 27px;
+    padding-top: 17px;
   }
 }
 @media (min-width: 1024px) {
