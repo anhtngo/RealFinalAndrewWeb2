@@ -15,6 +15,7 @@
         display: grid;
         grid-template-columns: auto 800px auto;
         grid-template-areas: ". influenced .";
+        padding-top: 27px;
     }
 
     @include lg {

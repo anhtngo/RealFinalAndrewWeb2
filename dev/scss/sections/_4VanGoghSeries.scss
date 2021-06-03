@@ -1,12 +1,14 @@
 #vangoghseries {
     >div {
-       
+       margin-top: 24px;
         >div{
             @include md{
             display: grid;
         grid-template-columns: auto 800px auto;
         grid-template-areas: ". h1 ."
                              ". search-series .";
+        
+
         }
         
         @include lg{
@@ -31,6 +33,7 @@
             @include md{
                 justify-content: flex-start;
                 grid-area: search-series;
+                margin-bottom: 20px;
             }
         }
         }

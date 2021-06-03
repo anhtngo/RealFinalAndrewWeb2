@@ -2,9 +2,11 @@
     >div{
         >div{
             @include md{
+                margin-top: 24px;
                 display: grid;
             grid-template-columns: auto 800px auto;
             grid-template-areas: ". h1 .";
+            margin-bottom: 24px;
             }
             
             @include lg{
