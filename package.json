@@ -1,13 +1,22 @@
 {
-  "name": "codekit-project",
+  "name": "vangoghandrewweb2",
   "version": "1.0.0",
-  "description": "CodeKit created this starter package.json file. You should customize it appropriately. (If you intend to publish this project on npm, add an entry in the 'repository' field and remove the 'private' attribute, below.)",
-  "scripts": {},
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w dev/scss/ -o deploy/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jadedinhh/VangoghAndrewWeb2.git"
+  },
   "author": "",
-  "license": "UNLICENSED",
-  "repository": {},
-  "private": true,
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jadedinhh/VangoghAndrewWeb2/issues"
+  },
+  "homepage": "https://github.com/Jadedinhh/VangoghAndrewWeb2#readme",
   "dependencies": {
-    "jquery": "^3.6.0"
+    "node-sass": "^6.0.0"
   }
 }

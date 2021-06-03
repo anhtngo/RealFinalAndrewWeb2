@@ -14,36 +14,30 @@
     <main>
         <div>
     <header>
-        <div>
-    
-            <section id="logo-container">
+        <section id="logo-container">
             <img src="img/footer/logo.jpg" alt="logo">
         </section>
-    
-        <nav>
+        
+        <nav id="navbar">
             <ul>
-                <li>About</li>
-                <li>Artwork</li>
-                <li>Influence</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Artwork</a></li>
+                <li><a href="#">Influencee</a></li>
             </ul>
         </nav>
-    
+        
         <section id="search">
-            <div>
-                <form action="POST">
+            <form action="POST">
                 <input type="text" placeholder="Search our restaurant">
-                <button><i class="fas fa-search"></i></button>
-                </form>
-            </div>
+                <i class="fas fa-search"></i>
+            </form>
         </section>
-    
-       <aside id="language">
-           <h2>ENG</h2>
-           <i class="fas fa-caret-down"></i>
-       </aside>
         
-        </div>
-        
+        <aside id="language">
+            <button>
+                ENG <i class="fas fa-caret-down"></i>
+            </button>
+        </aside>
     </header>
     
     <section id="hero">
@@ -196,7 +190,7 @@
                     <h4>ARTIST’S NAME: Stefan Duncan</h4>
                     <h4>TIME: May 9th, 2015 </h4>
                     <h4>MEDIUM: Arcrylic On Canvas</h4>
-                    <a href="http://www.stefanduncan.com">http://www.stefanduncan.com</a>
+                    <a href="#">http://www.stefanduncan.com</a>
                 </div>
                     </section>
                 </li>
@@ -388,12 +382,42 @@
     </section>
 
     <footer>
-        <!-- <h1><span>SUBSCRIBE</span> TO GET IN TOUCH</h1>
-        <ul>
-            <li><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></li>
-            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></li>
-            <li><a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a></li>
-        </ul> -->
+        <div class="footer-container">
+            <div id="logo">
+                <img src="img/footer/logo.jpg" alt="logo">
+            </div>
+            <!-- <div id="links"> -->
+                <div id="company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="support">
+                    <h3>Support</h2>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Registrar Portal</a></li>
+                        <li><a href="#">Registrar List</a></li>
+                    </ul>
+                </div>
+                <div id="terms-of-use">
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Policies</a></li>
+                    </ul>
+                </div>
+                <div id="social">
+                    <i class="fas fa-envelope"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fas fa-rss"></i>
+                </div>
+            <!-- </div>s -->
+        </div>
     </footer>
         </div>
     </main>

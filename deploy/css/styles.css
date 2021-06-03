@@ -654,7 +654,7 @@ footer > div #social i:hover {
   }
 }
 #hero {
-  padding-bottom: 17px;
+  padding-bottom: 47px;
 }
 #hero #img {
   background-image: url("../img/1 hero/1-hero.jpg");
@@ -723,7 +723,7 @@ footer > div #social i:hover {
     display: grid;
     grid-template-columns: auto 700px auto;
     grid-template-areas: ". era .";
-    padding-top: 17px;
+    padding-top: 27px;
   }
 }
 @media (min-width: 1024px) {
@@ -887,7 +887,6 @@ footer > div #social i:hover {
     display: grid;
     grid-template-columns: auto 800px auto;
     grid-template-areas: ". influenced .";
-    padding-top: 27px;
   }
 }
 @media (min-width: 1024px) {
@@ -1015,7 +1014,8 @@ footer > div #social i:hover {
   }
 }
 #vangoghseries > div {
-  margin-top: 24px;
+  margin-top: 20px;
+  margin-bottom: 20 px;
 }
 @media (min-width: 768px) {
   #vangoghseries > div > div {
@@ -1051,7 +1051,6 @@ footer > div #social i:hover {
   #vangoghseries > div > div #search-series {
     justify-content: flex-start;
     grid-area: search-series;
-    margin-bottom: 20px;
   }
 }
 @media (min-width: 768px) {
@@ -1213,11 +1212,9 @@ footer > div #social i:hover {
 
 @media (min-width: 768px) {
   #iconicartworks > div > div {
-    margin-top: 24px;
     display: grid;
     grid-template-columns: auto 800px auto;
     grid-template-areas: ". h1 .";
-    margin-bottom: 24px;
   }
 }
 @media (min-width: 1024px) {

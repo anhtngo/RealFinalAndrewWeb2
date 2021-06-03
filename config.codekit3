@@ -460,24 +460,24 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/3Influenced.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/content\/4VangoghSeries.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/4VangoghSeries.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/content\/5IconicArtworks.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/5IconicArtworks.html",
-      "oF" : 0
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 3
     },
     "\/dev\/content\/quote.kit" : {
       "cB" : 0,
@@ -527,19 +527,8 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 2
     },
-    "\/dev\/js\/script-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/dev\/js\/script-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/dev\/js\/script.js" : {
-      "bF" : 4,
+      "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
@@ -790,16 +779,10 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/css\/styles.css",
-      "oF" : 3,
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/node_modules",
-      "oF" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
@@ -845,7 +828,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 642009519.15315497,
-    "displayValue" : "VangoghAndrewWeb2",
+    "displayValue" : "RealFinalAndrewWeb2",
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-azure",
     "iconImageWasSetByUser" : 0
