@@ -1,12 +1,15 @@
 #hero{
     padding-bottom: 47px;
+    
         #img{
             background-image: url("../img/1 hero/1-hero.jpg");
             height: 500px;
             background-position: center;
             background-size: cover;
         }
+
     >div{
+
        display: grid;
        grid-template-columns: 16px auto 16px;
        grid-template-areas: ". content .";

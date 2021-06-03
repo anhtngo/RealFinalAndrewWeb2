@@ -1,71 +1,183 @@
-#influenced{
-    
+#influenced {
+
     padding-bottom: 47px;
-    @include md{
+
+    img {
+        width: 100%;
+    }
+
+    @include md {
         background-image: url("../img/Influenced/bridge.jpg");
         background-size: cover;
         background-position: center;
+        height: 600px;
+        color: white;
+        display: grid;
+        grid-template-columns: auto 800px auto;
+        grid-template-areas: ". influenced .";
     }
 
-    >div{
-        
-       #influenced-content{
-           display: grid;
-           grid-template-columns: 32px auto 32px;
-           grid-template-areas: ". influenced-info .";
-           padding-top: 19px;
-   
-           >div{
-               grid-area: influenced-info;
+    @include lg {
+        grid-template-columns: auto 1000px auto;
+    }
 
-               h1{
-                   padding: 8px 0;
-               }
-           }
-       }
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
 
-       #influenced-img{
-           ul{
-               li{
+    >div {
 
-               }
+        display: grid;
+        grid-template-areas: "influeced-img"
+            "h1"
+            "influenced-info";
 
-               #duncan{
+        @include md {
 
-                  section{
-
-                      aside{
-                              @include md{
-
-                                  background-image: url("../img/Influenced/duncan.jpg");
-                                  background-size: cover;
-                                  background-position: center;
-                                   grid-template-rows: 300px;
-                                   display: grid;
-
-                                  img{
-                                      display: none;
-                                  }
-                              }
-                      }
-
-                      >div{
-                          display: none;
-
-                          @include md{
-                              display: list-item;
-                          }
-                      }
-                  }
-               }
-
-               #lee{
-                   display: none;
-               }
-           }
-
-       }
+            grid-template-columns: auto 30%;
+            grid-template-areas: "h1 h1"
+                "influenced-img influenced-info";
+            gap: 60px;
+            grid-area: influenced;
+        }
 
 
-   }
+        h1 {
+            padding: 8px 32px;
+            grid-area: h1;
+        }
+
+
+        #influenced-content {
+            display: grid;
+            grid-template-columns: 32px auto 32px;
+            grid-template-areas: ". influenced-info .";
+            padding-top: 19px;
+
+            @include md {
+                background-color: black;
+            }
+
+            >div {
+                grid-area: influenced-info;
+
+
+            }
+
+
+
+        }
+
+        #influenced-img {
+            ul {
+                @include md {
+                    grid-area: influenced-img;
+
+                }
+
+                @include lg {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-areas: "duncan lee";
+                    gap: 60px;
+                }
+
+                li {
+                    section {
+                        display: grid;
+                        grid-template-columns: 16px auto 16px;
+                        grid-template-areas: ". influence-list .";
+
+                        >div {
+                            grid-area: influence-list;
+                        }
+                    }
+                }
+
+                #duncan {
+                    @include lg {
+                        grid-area: duncan;
+                    }
+
+
+
+                    aside {
+                        @include md {
+
+                            background-image: url("../img/Influenced/duncan.jpg");
+                            background-size: cover;
+                            background-position: center;
+                            grid-template-rows: 300px;
+                            display: grid;
+
+
+                            img {
+                                display: none;
+                            }
+                        }
+
+                        @include xl {
+                            grid-template-rows: 400px;
+                        }
+                    }
+
+                    section {
+                        @include md{
+                             background-color: black;
+                        }
+                        >div {
+                            display: none;
+
+                            @include md {
+                                display: list-item;
+                               
+                            }
+                        }
+                    }
+                }
+
+                #lee {
+                    display: none;
+
+                    @include lg {
+                        display: list-item;
+                        grid-area: lee;
+                    }
+
+
+                    aside {
+
+                        @include lg {
+                            background-image: url("../img/Influenced/lee.jpg");
+                            background-size: cover;
+                            background-position: center;
+                            grid-template-rows: 300px;
+                            display: grid;
+                        }
+
+
+                        @include xl {
+                            grid-template-rows: 400px;
+                        }
+
+                    }
+
+                    section { 
+                        @include lg {
+
+                                background-color: black;
+                            }
+                        >div {
+                           
+                        }
+                    }
+
+
+                }
+            }
+
+        }
+
+
+    }
 }
