@@ -33,19 +33,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/0 footer\/vangogh logo.jpg" : {
-      "ft" : 16384,
-      "iS" : 71767,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/0 footer\/vangogh logo.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/1 hero\/1-hero.jpg" : {
       "ft" : 16384,
       "iS" : 936624,
@@ -208,6 +195,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/Era\/paul.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/footer\/logo.jpg" : {
+      "ft" : 16384,
+      "iS" : 71767,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/footer\/logo.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -476,8 +476,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 3
+      "oAP" : "\/dev\/content\/5IconicArtworks.html",
+      "oF" : 0
     },
     "\/dev\/content\/quote.kit" : {
       "cB" : 0,

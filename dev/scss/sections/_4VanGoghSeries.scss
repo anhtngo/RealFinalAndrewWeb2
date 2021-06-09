@@ -1,9 +1,216 @@
-#vangoghseries{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". 4-vangogh-series .";
-    
-    >article{
-        grid-area: search;
+#vangoghseries {
+    >div {
+       
+        >div{
+            @include md{
+            display: grid;
+        grid-template-columns: auto 800px auto;
+        grid-template-areas: ". h1 ."
+                             ". search-series .";
+        margin-bottom: 20px;
+        }
+        
+        @include lg{
+            grid-template-columns: auto 1000px auto;
+        }
+
+        @include lg{
+            grid-template-columns: auto 1200px auto;
+        }
+             h1 {
+            text-align: center;
+            @include md{
+                text-align: left;
+                grid-area: h1;
+            }
+        }
+        #Series {
+            margin-top: 20px;
+        }
+        #search-series {
+            display: flex;
+            justify-content: center;
+
+            @include md{
+                justify-content: flex-start;
+                grid-area: search-series;
+            }
+        }
+        }
+       
+
+
+        #series-img {
+
+            
+
+            @include md{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-areas: "Gatchet sunflowers bedroom";
+            }
+
+            @include lg{
+                grid-template-columns: repeat(5,1fr);
+                grid-template-areas: "water Gatchet sunflowers bedroom tree";
+
+            }
+
+
+            li {
+                section {
+                    display: grid;
+                    grid-template-columns: 16px auto 16px;
+                    grid-template-areas: ". series-list .";
+
+                    @include md {
+                        background-color: black;
+                        color: white;
+                    }
+
+                    >div {
+                        grid-area: series-list;
+                    }
+                }
+            }
+
+            #sunflowers {
+                
+                aside {
+                    background-image: url("../img/Series/sunflower.jpg");
+                    background-position: center;
+                    background-size: cover;
+                    display: grid;
+                    grid-template-rows: 700px;
+                    
+
+                    i{
+                        font-size: rem-calc(50);
+                        display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    color: $blue;
+
+                    &:hover {
+                    
+                        color: $white;
+                        cursor: pointer;
+                    }
+                    @include md{
+                        display: none;
+                    }
+
+                   
+                    }
+
+                    @include md{
+                        grid-template-rows: 350px;
+                        margin-top: -30px;
+                        
+                    }
+
+                    @include xl{
+                        grid-template-rows: 500px;
+                    }
+                }
+
+                section {
+                    background-color: black;
+                    color: white;
+                }
+
+                @include md{
+                    grid-area: sunflowers;
+                  
+                }
+
+            }
+
+            #bedroom {
+                display: none;
+
+                @include md {
+                    display: list-item;
+                    grid-area: bedroom;
+
+                    aside {
+                        background-image: url("../img/Series/bed.jpg");
+                        background-position: center;
+                        background-size: cover;
+                        display: grid;
+                        grid-template-rows: 300px;
+
+                        @include xl{
+                            grid-template-rows: 400px;
+                        }
+                    }
+                }
+            }
+
+            #Gatchet {
+                display: none;
+
+                @include md {
+                    display: list-item;
+                    grid-area: Gatchet;
+
+                    aside {
+                        background-image: url("../img/Series/think.jpg");
+                        background-position: center;
+                        background-size: cover;
+                        display: grid;
+                        grid-template-rows: 300px;
+                        @include xl{
+                            grid-template-rows: 400px;
+                        }
+                    }
+                }
+            }
+
+            #tree {
+                display: none; 
+                
+                @include lg{
+                    display: list-item;
+                    grid-area: tree;
+                aside{
+                    
+                    background-image: url("../img/Series/tree.jpg");
+                        background-position: center;
+                        background-size: cover;
+                        display: grid;
+                        grid-template-rows: 320px;
+                        margin-top: 30px;
+                        @include xl{
+                            grid-template-rows: 400px;
+                        }
+                }
+                }
+               
+            }
+
+            #water {
+                display: none;
+                 @include lg{
+                    display: list-item;
+                    grid-area: water;
+                aside{
+                    
+                    background-image: url("../img/Series/water.jpg");
+                        background-position: center;
+                        background-size: cover;
+                        display: grid;
+                        grid-template-rows: 320px;
+                        margin-top: 30px;
+                        @include xl{
+                            grid-template-rows: 400px;
+                        }
+                }
+                }
+
+               
+            }
+        }
     }
+
 }
